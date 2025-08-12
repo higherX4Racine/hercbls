@@ -14,3 +14,12 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://higherx4racine.github.io/hercbls/
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports: 
+    dplyr,
+    readxl,
+    rlang,
+    stringr,
+    tidyr
