@@ -34,8 +34,6 @@ parse_education_assignments_file <- function(.ed_file) {
                           "skip")
         ) |>
         dplyr::mutate(
-            soc_code = .data$soc_code |>
-                stringr::str_remove("-") |>
-                as.integer()
+            soc_code = dashed_soc_to_int(.data$soc_code)
         )
 }
