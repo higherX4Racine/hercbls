@@ -13,5 +13,8 @@ parse_soc_hierarchy_file(.hierarchy_file)
 a data frame of classified occupation types
 }
 \description{
-Read a spreadsheet of Standard Occupational Classification codes
+This is an internal function for creating the \link{SOC_HIERARCHY} data table.
+}
+\seealso{
+\link{SOC_HIERARCHY}
 }

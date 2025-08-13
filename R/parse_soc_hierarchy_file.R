@@ -2,10 +2,12 @@
 
 #' Read a spreadsheet of Standard Occupational Classification codes
 #'
+#' This is an internal function for creating the [SOC_HIERARCHY] data table.
+#'
 #' @param .hierarchy_file the full path to the spreadsheet
 #'
 #' @returns a data frame of classified occupation types
-#' @export
+#' @seealso [SOC_HIERARCHY]
 parse_soc_hierarchy_file <- function(.hierarchy_file) {
     .hierarchy_file |>
         readxl::read_xlsx(
