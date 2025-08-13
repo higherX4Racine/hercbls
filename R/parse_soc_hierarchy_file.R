@@ -25,15 +25,13 @@ parse_soc_hierarchy_file <- function(.hierarchy_file) {
                             "Minor",
                             "Broad",
                             "Detailed"),
-                          \(.s) .s |>
-                              stringr::str_remove("-") |>
-                              as.integer()),
+                          dashed_soc_to_int),
             Minor = dplyr::coalesce(.data$Major,
                                     .data$Minor),
-            Broad = dplyr::coalesce(.data$Broad,
-                                    .data$Minor),
-            Detailed = dplyr::coalesce(.data$Detailed,
-                                       .data$Broad)
+            Broad = dplyr::coalesce(.data$Minor,
+                                    .data$Broad),
+            Detailed = dplyr::coalesce(.data$Broad,
+                                       .data$Detailed)
         ) |>
         tidyr::fill(
             "Major",

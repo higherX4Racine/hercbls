@@ -32,3 +32,10 @@ reference:
   contents:
   - parse_soc_hierarchy_file
   - parse_education_assignments_file
+
+- subtitle: Utilities
+  desc: >
+    Code that, while used frequently within the package, is probably not going
+    to be relevant for end users.
+  contents:
+  - dashed_soc_to_int

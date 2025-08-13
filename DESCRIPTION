@@ -15,7 +15,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://higherx4racine.github.io/hercbls/
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 LazyData: true
 Imports: 
     dplyr,
