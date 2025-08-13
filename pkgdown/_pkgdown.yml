@@ -1,0 +1,34 @@
+url: https://higherx4racine.github.io/hercbls/
+
+template:
+  bootstrap: 5
+  light-switch: true
+
+repo:
+  url:
+    home: https://github.com/higherX4Racine/hercbls
+
+destination: pkgdown/docs/
+
+articles:
+
+reference:
+
+- title: Data
+  desc: >
+    Data frames included with the package because they have helpful definitions.
+  contents:
+  - EDUCATION_ASSIGNMENTS
+  - SOC_HIERARCHY
+
+- title: Internal
+  desc: >
+    Utilities for updating package data sets or reducing repetition
+
+- subtitle: Data creation
+  desc: >
+    Normally, these would be in `data-raw`, but I don't want to include files
+    that are just duplicates straight from the BLS website.
+  contents:
+  - parse_soc_hierarchy_file
+  - parse_education_assignments_file
