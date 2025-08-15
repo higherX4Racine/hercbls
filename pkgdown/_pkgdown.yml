@@ -13,11 +13,17 @@ destination: pkgdown/docs/
 articles:
 
 reference:
+- title: Working with files downloaded from the BLS via a browser
+  desc: >
+    The first way most people will pull data from the BLS will be a web form
+  contents:
+  - parse_oes_download
 
 - title: Data
   desc: >
     Data frames included with the package because they have helpful definitions.
   contents:
+  - EDUCATIONAL_ATTAINMENT_LEVELS
   - EDUCATION_ASSIGNMENTS
   - SOC_HIERARCHY
 
