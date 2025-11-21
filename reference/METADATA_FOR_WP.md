@@ -1,6 +1,6 @@
 # Lookup tables for codes used by series "WP."
 
-### METADATA_FOR_WP
+Lookup tables for codes used by series "WP."
 
 ## Usage
 

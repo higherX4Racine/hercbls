@@ -1,6 +1,6 @@
 # Lookup tables for codes used by series "LA."
 
-### METADATA_FOR_LA
+Lookup tables for codes used by series "LA."
 
 ## Usage
 
