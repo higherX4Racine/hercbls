@@ -1,0 +1,10 @@
+datatype_code	datatype_text
+1	DJTR injury and illness annualized rate per 10,000 full-time workers
+2	DJTR biennial injury and illness cases
+3	DAFW injury and illness annualized rate per 10,000 full-time workers
+4	Median days of job transfer or restriction
+5	DART injury and illness annualized rate per 10,000 full-time workers
+6	DAFW biennial injury and illness cases
+7	Median days away from work
+8	DART biennial injury and illness cases
+9	Median DART days

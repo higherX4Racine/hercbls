@@ -8,12 +8,11 @@
 A six-column table.
 
 \describe{
-\item{Group}{The level of the hierarchy an occupation type belongs to.}
-\item{Major}{Which top-level group this occupation belongs to}
-\item{Minor}{Which 2nd-level group this occupation belongs to}
-\item{Broad}{Which 3rd-level group this occupation belongs to}
-\item{Detailed}{The SOC code for this occupation type or group of types.}
-\item{Title}{A verbal description of the occupation type or group.}
+\item{Title}{A verbal description of the occupation type or group}
+\item{soc_code}{The SOC code for this occupation type or group of types}
+\item{Education}{A description of the education required for this job}
+\item{Experience}{A description of the career experience for this job}
+\item{Training}{A description of the on-the-job training for this job}
 }
 }
 \source{

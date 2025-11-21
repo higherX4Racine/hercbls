@@ -13,11 +13,17 @@ destination: pkgdown/docs/
 articles:
 
 reference:
+- title: Working with files downloaded from the BLS via a browser
+  desc: >
+    The first way most people will pull data from the BLS will be a web form
+  contents:
+  - parse_oes_download
 
 - title: Data
   desc: >
     Data frames included with the package because they have helpful definitions.
   contents:
+  - EDUCATIONAL_ATTAINMENT_LEVELS
   - EDUCATION_ASSIGNMENTS
   - SOC_HIERARCHY
 
@@ -32,3 +38,27 @@ reference:
   contents:
   - parse_soc_hierarchy_file
   - parse_education_assignments_file
+
+- subtitle: Utilities
+  desc: >
+    Code that, while used frequently within the package, is probably not going
+    to be relevant for end users.
+  contents:
+  - dashed_soc_to_int
+
+- subtitle: Glossaries
+  desc: >
+    Lookup tables for understanding different abbreviations found in BLS data.
+  contents:
+  - GLOSSARY_OF_AREA_TYPES
+  - GLOSSARY_OF_AREAS
+  - GLOSSARY_OF_SEASONAL_ADJUSTMENTS
+
+- subtitle: Survey Metadata
+  desc: >
+    The BLS provides a set of tables on its public download site that explain
+    all of the cryptic abbreviations in each survey's data.
+  contents:
+  - GLOSSARY_OF_SURVEYS
+  - METADATA_FOR_LA
+  - METADATA_FOR_WP
