@@ -37,23 +37,46 @@
     </div>
 
     <div class="section level2">
-      <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a></h2>
+      <h2 id="working-with-files-downloaded-from-the-bls-via-a-browser">Working with files downloaded from the BLS via a browser<a class="anchor" aria-label="anchor" href="#working-with-files-downloaded-from-the-bls-via-a-browser"></a></h2>
 
-      <div class="section-desc"><p>Data frames included with the package because they have helpful definitions.</p></div>
+      <div class="section-desc"><p>The first way most people will pull data from the BLS will be a web form</p></div>
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
 
       <dl><dt>
 
+          <code><a href="parse_oes_download.html">parse_oes_download()</a></code>
+
+        </dt>
+        <dd>Read an excel spreadsheet pulled from the BLS site.</dd>
+      </dl></div><div class="section level2">
+      <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a></h2>
+
+      <div class="section-desc"><p>Data frames included with the package because they have helpful definitions.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="EDUCATIONAL_ATTAINMENT_LEVELS.html">EDUCATIONAL_ATTAINMENT_LEVELS</a></code>
+
+        </dt>
+        <dd>Levels of educational attainment, according to the BLS</dd>
+
+        <dt>
+
           <code><a href="EDUCATION_ASSIGNMENTS.html">EDUCATION_ASSIGNMENTS</a></code>
 
         </dt>
         <dd>Education and training assignments by detailed occupation</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="SOC_HIERARCHY.html">SOC_HIERARCHY</a></code>
 
@@ -64,14 +87,12 @@
 
       <div class="section-desc"><p>Utilities for updating package data sets or reducing repetition</p></div>
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
       <h3 id="data-creation">Data creation<a class="anchor" aria-label="anchor" href="#data-creation"></a></h3>
       <div class="section-desc"><p>Normally, these would be in <code>data-raw</code>, but I don’t want to include files that are just duplicates straight from the BLS website.</p></div>
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -82,12 +103,89 @@
 
         </dt>
         <dd>Read a spreadsheet of Standard Occupational Classification codes</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="parse_education_assignments_file.html">parse_education_assignments_file()</a></code>
 
         </dt>
         <dd>Read a spreadsheet of S.O.C. codes and educational levels.</dd>
+      </dl></div><div class="section level2">
+
+      <h3 id="utilities">Utilities<a class="anchor" aria-label="anchor" href="#utilities"></a></h3>
+      <div class="section-desc"><p>Code that, while used frequently within the package, is probably not going to be relevant for end users.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="dashed_soc_to_int.html">dashed_soc_to_int()</a></code>
+
+        </dt>
+        <dd>Utility for converting xx-xxxx SOC codes to 6-digit integers</dd>
+      </dl></div><div class="section level2">
+
+      <h3 id="glossaries">Glossaries<a class="anchor" aria-label="anchor" href="#glossaries"></a></h3>
+      <div class="section-desc"><p>Lookup tables for understanding different abbreviations found in BLS data.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="GLOSSARY_OF_AREA_TYPES.html">GLOSSARY_OF_AREA_TYPES</a></code>
+
+        </dt>
+        <dd>Types of geographic area</dd>
+
+        <dt>
+
+          <code><a href="GLOSSARY_OF_AREAS.html">GLOSSARY_OF_AREAS</a></code>
+
+        </dt>
+        <dd>Specific geographic areas</dd>
+
+        <dt>
+
+          <code><a href="GLOSSARY_OF_SEASONAL_ADJUSTMENTS.html">GLOSSARY_OF_SEASONAL_ADJUSTMENTS</a></code>
+
+        </dt>
+        <dd>Types of seasonal adjustments</dd>
+      </dl></div><div class="section level2">
+
+      <h3 id="survey-metadata">Survey Metadata<a class="anchor" aria-label="anchor" href="#survey-metadata"></a></h3>
+      <div class="section-desc"><p>The BLS provides a set of tables on its public download site that explain all of the cryptic abbreviations in each survey’s data.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="GLOSSARY_OF_SURVEYS.html">GLOSSARY_OF_SURVEYS</a></code>
+
+        </dt>
+        <dd>The menu of surveys at the BLS API</dd>
+
+        <dt>
+
+          <code><a href="METADATA_FOR_LA.html">METADATA_FOR_LA</a></code>
+
+        </dt>
+        <dd>Lookup tables for codes used by series "LA."</dd>
+
+        <dt>
+
+          <code><a href="METADATA_FOR_WP.html">METADATA_FOR_WP</a></code>
+
+        </dt>
+        <dd>Lookup tables for codes used by series "WP."</dd>
       </dl></div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
@@ -98,7 +196,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>

@@ -1,0 +1,86 @@
+# hercbls
+
+The goal of hercbls is to automate and simplify some frequent tasks that
+occur when processing data from the [U.S. Bureau of Labor
+Statistics](https://www.bls.gov). That includes processing data that has
+been downloaded after navigating the site [by
+hand](https://www.bls.gov/data/), as well as data pulled from the
+[API](https://www.bls.gov/developers/api_signature_v2.htm)
+
+## Installation
+
+You can install the development version of hercbls from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("higherX4Racine/hercbls")
+```
+
+# Package index
+
+## Working with files downloaded from the BLS via a browser
+
+The first way most people will pull data from the BLS will be a web form
+
+- [`parse_oes_download()`](https://higherx4racine.github.io/hercbls/reference/parse_oes_download.md)
+  : Read an excel spreadsheet pulled from the BLS site.
+
+## Data
+
+Data frames included with the package because they have helpful
+definitions.
+
+- [`EDUCATIONAL_ATTAINMENT_LEVELS`](https://higherx4racine.github.io/hercbls/reference/EDUCATIONAL_ATTAINMENT_LEVELS.md)
+  : Levels of educational attainment, according to the BLS
+- [`EDUCATION_ASSIGNMENTS`](https://higherx4racine.github.io/hercbls/reference/EDUCATION_ASSIGNMENTS.md)
+  : Education and training assignments by detailed occupation
+- [`SOC_HIERARCHY`](https://higherx4racine.github.io/hercbls/reference/SOC_HIERARCHY.md)
+  : Standard Occupational Classification
+
+## Internal
+
+Utilities for updating package data sets or reducing repetition
+
+### Data creation
+
+Normally, these would be in `data-raw`, but I don’t want to include
+files that are just duplicates straight from the BLS website.
+
+- [`parse_soc_hierarchy_file()`](https://higherx4racine.github.io/hercbls/reference/parse_soc_hierarchy_file.md)
+  : Read a spreadsheet of Standard Occupational Classification codes
+- [`parse_education_assignments_file()`](https://higherx4racine.github.io/hercbls/reference/parse_education_assignments_file.md)
+  : Read a spreadsheet of S.O.C. codes and educational levels.
+
+### Utilities
+
+Code that, while used frequently within the package, is probably not
+going to be relevant for end users.
+
+- [`dashed_soc_to_int()`](https://higherx4racine.github.io/hercbls/reference/dashed_soc_to_int.md)
+  : Utility for converting xx-xxxx SOC codes to 6-digit integers
+
+### Glossaries
+
+Lookup tables for understanding different abbreviations found in BLS
+data.
+
+- [`GLOSSARY_OF_AREA_TYPES`](https://higherx4racine.github.io/hercbls/reference/GLOSSARY_OF_AREA_TYPES.md)
+  : Types of geographic area
+- [`GLOSSARY_OF_AREAS`](https://higherx4racine.github.io/hercbls/reference/GLOSSARY_OF_AREAS.md)
+  : Specific geographic areas
+- [`GLOSSARY_OF_SEASONAL_ADJUSTMENTS`](https://higherx4racine.github.io/hercbls/reference/GLOSSARY_OF_SEASONAL_ADJUSTMENTS.md)
+  : Types of seasonal adjustments
+
+### Survey Metadata
+
+The BLS provides a set of tables on its public download site that
+explain all of the cryptic abbreviations in each survey’s data.
+
+- [`GLOSSARY_OF_SURVEYS`](https://higherx4racine.github.io/hercbls/reference/GLOSSARY_OF_SURVEYS.md)
+  : The menu of surveys at the BLS API
+- [`METADATA_FOR_LA`](https://higherx4racine.github.io/hercbls/reference/METADATA_FOR_LA.md)
+  : Lookup tables for codes used by series "LA."
+- [`METADATA_FOR_WP`](https://higherx4racine.github.io/hercbls/reference/METADATA_FOR_WP.md)
+  : Lookup tables for codes used by series "WP."
+
