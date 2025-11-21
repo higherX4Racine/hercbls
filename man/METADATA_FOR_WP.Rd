@@ -70,7 +70,6 @@ with 2 rows and 2 columns
 METADATA_FOR_WP
 }
 \description{
-\subsection{METADATA_FOR_WP}{
-}
+Lookup tables for codes used by series "WP."
 }
 \keyword{datasets}
