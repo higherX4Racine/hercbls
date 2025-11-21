@@ -1,0 +1,21 @@
+## Copyright (C) 2025 by Higher Expectations for Racine County
+
+GLOSSARY_OF_AREA_TYPES <- tibble::tribble(
+    ~ area_type_code,	~ areatype_text,
+    "A",	"Statewide",
+    "B",	"Metropolitan areas",
+    "C",	"Metropolitan divisions",
+    "D",	"Micropolitan areas",
+    "E",	"Combined areas",
+    "F",	"Counties and equivalents",
+    "G",	"Cities and towns above 25,000 population",
+    "H",	"Cities and towns below 25,000 population in New England",
+    "I",	"Parts of cities that cross county boundaries",
+    "J",	"Multi-entity small labor market areas",
+    "K",	"Intrastate parts of interstate areas",
+    "L",	"Balance of state areas",
+    "M",	"Census regions",
+    "N",	"Census divisions"
+)
+
+usethis::use_data(GLOSSARY_OF_AREA_TYPES, overwrite = TRUE)

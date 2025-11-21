@@ -45,3 +45,20 @@ reference:
     to be relevant for end users.
   contents:
   - dashed_soc_to_int
+
+- subtitle: Glossaries
+  desc: >
+    Lookup tables for understanding different abbreviations found in BLS data.
+  contents:
+  - GLOSSARY_OF_AREA_TYPES
+  - GLOSSARY_OF_AREAS
+  - GLOSSARY_OF_SEASONAL_ADJUSTMENTS
+
+- subtitle: Survey Metadata
+  desc: >
+    The BLS provides a set of tables on its public download site that explain
+    all of the cryptic abbreviations in each survey's data.
+  contents:
+  - GLOSSARY_OF_SURVEYS
+  - METADATA_FOR_LA
+  - METADATA_FOR_WP
