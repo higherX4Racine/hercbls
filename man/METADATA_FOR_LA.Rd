@@ -93,7 +93,6 @@ with 53 rows and 2 columns
 METADATA_FOR_LA
 }
 \description{
-\subsection{METADATA_FOR_LA}{
-}
+Lookup tables for codes used by series "LA."
 }
 \keyword{datasets}

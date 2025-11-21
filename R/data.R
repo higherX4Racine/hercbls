@@ -117,11 +117,9 @@
 
 #' Lookup tables for codes used by series "LA."
 #'
-#' ## METADATA_FOR_LA
-#'
 #' @format a list of seven data frames
 #'
-#' ### area
+#' ## area
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 8,325 rows and 4 columns
@@ -133,7 +131,7 @@
 #'   \item{sort_sequence}{`<int>` which row this area would be if they were sorted by FIPS codes}
 #' }
 #'
-#' ### area_type
+#' ## area_type
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 14 rows and 2 columns
@@ -143,7 +141,8 @@
 #'   \item{areatype_text}{`<chr>` a short description of the type of area }
 #' }
 #'
-#' ### footnote
+#' ## footnote
+#'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 7 rows and 2 columns
 #'
@@ -152,7 +151,7 @@
 #'   \item{footnote_text}{`<chr>` an explanation of the footnote}
 #'  }
 #'
-#' ### measure
+#' ## measure
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 7 rows and 2 columns (S3: spec_tbl_df/tbl_df/tbl/data.frame)
@@ -162,7 +161,7 @@
 #'   \item{measure_text}{`<chr>` a description of what the values measure}
 #' }
 #'
-#' ### period
+#' ## period
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 13 rows and 3 columns
@@ -173,7 +172,7 @@
 #'   \item{period_name}{`<chr>` the full name of the period}
 #' }
 #'
-#' ### seasonal
+#' ## seasonal
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 2 rows and 2 columns
@@ -183,7 +182,7 @@
 #'   \item{seasonal_text}{`<chr>` either "Unadjusted" or "Seasonally Adjusted."}
 #' }
 #'
-#' ### state_region_division
+#' ## state_region_division
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 53 rows and 2 columns
@@ -198,11 +197,10 @@
 
 #' Lookup tables for codes used by series "WP."
 #'
-#' ## METADATA_FOR_WP
-#'
 #' @format a list of five data frames
 #'
-#' ### footnote
+#' ## footnote
+#'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 2 rows and 2 columns
 #'
@@ -211,7 +209,7 @@
 #'   \item{footnote_text}{`<chr>` an explanation of the footnote}
 #'  }
 #'
-#' ### group
+#' ## group
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 56 rows and 2 columns (S3: spec_tbl_df/tbl_df/tbl/data.frame)
@@ -221,7 +219,7 @@
 #'   \item{group_text}{`<chr>` a broad category of commodities}
 #' }
 #'
-#' ### item
+#' ## item
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 4168 rows and 4 columns
@@ -232,7 +230,7 @@
 #'   \item{item_name}{`<chr>` the name of the commodity}
 #' }
 #'
-#' ### period
+#' ## period
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 13 rows and 3 columns
@@ -243,7 +241,7 @@
 #'   \item{period_name}{`<chr>` the full name of the period}
 #' }
 #'
-#' ### seasonal
+#' ## seasonal
 #'
 #' An object of class `spec_tbl_df/tbl_df/tbl/data.frame`
 #' with 2 rows and 2 columns
